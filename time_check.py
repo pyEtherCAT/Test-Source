@@ -90,3 +90,4 @@ print ("平均　time:{0}".format( (end)*1000) + "[msec]")     #実行時間の�
 print ("最大　time:{0}".format( (tmax)*1000) + "[msec]")     #実行時間のエンド計算と表示まで
 print ("最小　time:{0}".format( (tmin)*1000) + "[msec]")     #実行時間のエンド計算と表示まで
 print("[0x{:04X}]= 0x{:02x}{:02x},0x{:02x}{:02x},0x{:02x}{:02x},0x{:02x}{:02x}".format(ADDR, DATA[7],DATA[6],DATA[5],DATA[4],DATA[3],DATA[2],DATA[1],DATA[0]))
+print(" ")
