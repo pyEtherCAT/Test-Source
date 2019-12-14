@@ -7,6 +7,8 @@ ADP = 0x0000 #1台目
 ADDR = 0x0138 #コアレジスタのアドレス
 data = [0]*1
 
+time.sleep(2)
+
 ## 1回目の計測
 data[0] = 0x10 | 0x00
 start = time.time()     #実行時間のスタート計算
