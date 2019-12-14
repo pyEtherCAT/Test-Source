@@ -5,7 +5,7 @@ cat = MasterEtherCAT.MasterEtherCAT(nic)
 print(" ")
 
 ## 1回目の計測
-print("1回目の計測")
+print("1台目の計測")
 endsum =0
 tmax = 0
 tmin = 1
@@ -27,7 +27,7 @@ print("[0x{:04X}]= 0x{:02x}{:02x},0x{:02x}{:02x},0x{:02x}{:02x},0x{:02x}{:02x}".
 
 print(" ")
 ## 2回目の計測
-print("2回目の計測")
+print("2台目の計測")
 endsum =0
 tmax = 0
 tmin = 1
@@ -49,7 +49,7 @@ print("[0x{:04X}]= 0x{:02x}{:02x},0x{:02x}{:02x},0x{:02x}{:02x},0x{:02x}{:02x}".
 
 print(" ")
 ## 3回目の計測
-print("3回目の計測")
+print("3台目の計測")
 endsum =0
 tmax = 0
 tmin = 1
@@ -71,7 +71,7 @@ print("[0x{:04X}]= 0x{:02x}{:02x},0x{:02x}{:02x},0x{:02x}{:02x},0x{:02x}{:02x}".
 
 print(" ")
 ## 4回目の計測
-print("4回目の計測")
+print("4台目の計測")
 endsum =0
 tmax = 0
 tmin = 1
