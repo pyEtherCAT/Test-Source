@@ -26,7 +26,7 @@ print ("time:{0}".format( (time.time() - start)*1000) + "[msec]")     #実行時
 
 time.sleep(2)
 
-ADP = 0x0000-1 #2台目
+ADP = 0x0000-2 #2台目
 ADDR = 0x0138 #コアレジスタのアドレス
 data = [0]*1
 ## 3回目の計測
