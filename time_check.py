@@ -6,6 +6,7 @@ print(" ")
 
 ## 1回目の計測
 endsum =0
+tmax = 0
 print("1回目の計測")
 time.sleep(2)
 for i in range(10):
