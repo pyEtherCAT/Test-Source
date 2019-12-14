@@ -15,7 +15,7 @@ for i in range(10):
     cat.APRD(IDX=0x00, ADP=ADP, ADO=ADDR, DATA=[0,0,0,0,0,0,0,0]) #DATAは０を８個(64bit分)の枠を指示
     (DATA, WKC) = cat.socket_read() #結果を読出し
     endsum = endsum + (time.time() - start)
-    if(tmax>(time.time() - start) tmax = (time.time() - start)
+    tmax = (time.time() - start)　if(tmax>(time.time() - start) else tmax
 end = endsum / i
 print ("平均　time:{0}".format( (end)*1000) + "[msec]")     #実行時間のエンド計算と表示まで
 print ("最大:{0}".format( (tmax)*1000) + "[msec]")     #実行時間のエンド計算と表示まで
