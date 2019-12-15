@@ -93,16 +93,11 @@ def main():
                     cat.ADP = 0x0000 - 0
                     EtherCAT_GPIO_Out(cat, STEP[s])
                     time.sleep(TIME)
-
-            EtherCAT_GPIO_Out(cat, 0x0000)
-            time.sleep(2)
             for i in range(50*2):
                 for s in range(len(STEP2)):
                     cat.ADP = 0x0000 - 0
                     EtherCAT_GPIO_Out(cat, STEP2[s])
                     time.sleep(TIME)
-            EtherCAT_GPIO_Out(cat, 0x0000)
-            time.sleep(2)
 
     except KeyboardInterrupt:
         EtherCAT_GPIO_Out(cat, 0x0000)
