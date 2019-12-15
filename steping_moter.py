@@ -83,11 +83,12 @@ def main():
 
     #STEP = [0x09,0x01,0x05,0x04,0x06,0x02,0x0A,0x08,0x09,0x01]
     STEP = [0x05,0x09,0x0A,0x06]
+    STEP2 = [0x06,0x0A,0x09,0x05]
 
     try:
         while 1:
             # time.sleep(TIME)
-            for i in range(50*20):
+            for i in range(50*2):
                 for s in range(len(STEP)):
                     cat.ADP = 0x0000 - 0
                     EtherCAT_GPIO_Out(cat, STEP[s])
@@ -95,10 +96,10 @@ def main():
 
             EtherCAT_GPIO_Out(cat, 0x0000)
             time.sleep(2)
-            for i in range(50*20):
-                for s in range(len(STEP)):
+            for i in range(50*2):
+                for s in range(len(STEP2)):
                     cat.ADP = 0x0000 - 0
-                    EtherCAT_GPIO_Out(cat, STEP[s])
+                    EtherCAT_GPIO_Out(cat, STEP2[s])
                     time.sleep(TIME)
             EtherCAT_GPIO_Out(cat, 0x0000)
             time.sleep(2)
