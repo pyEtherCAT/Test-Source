@@ -1,8 +1,6 @@
 from pyEtherCAT import MasterEtherCAT
 import time
 import os
-import psutil
-
 
 #============================================================================#
 # C95用の簡易EtherCATパッケージです。
