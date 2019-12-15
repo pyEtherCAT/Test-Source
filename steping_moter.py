@@ -88,12 +88,12 @@ def main():
     try:
         while 1:
             # time.sleep(TIME)
-            for i in range(50*10):
+            for i in range(50*8):
                 for s in range(len(STEP)):
                     cat.ADP = 0x0000 - 0
                     EtherCAT_GPIO_Out(cat, STEP[s])
                     time.sleep(TIME)
-            for i in range(50*10):
+            for i in range(50*8):
                 for s in range(len(STEP2)):
                     cat.ADP = 0x0000 - 0
                     EtherCAT_GPIO_Out(cat, STEP2[s])
